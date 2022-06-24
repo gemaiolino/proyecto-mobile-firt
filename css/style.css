@@ -336,6 +336,21 @@ transform:skew(45deg);
     transition-duration: 1000ms;
 }
  
+/* ---------------------------main Obras sociales------------------------- */
+
+.main-obras-sociales article{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+    
+}
+
+
 
 
 
@@ -488,6 +503,21 @@ body{
         transition-duration: 1000ms;
     
     }
+/* -------------------------Obras sociales----------------- */
+
+.main-obras-sociales article{
     
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.main-obras-sociales article:hover{
+    transform: translate(200px);
+    transition-duration: 1000ms;
+}
+
 
 }
