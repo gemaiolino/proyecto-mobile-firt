@@ -1,0 +1,493 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    font-weight: bold;
+}
+body{
+    background-color: rgba(0, 128, 0, 0.562);
+}
+
+.contenedor{
+    background-image: url(../imagenes/logos/imagen-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 1000%;
+    
+} 
+
+
+
+
+
+
+/* -----------Header----------------- */
+.div{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    
+    
+    
+    
+}
+
+header h1{
+    text-align: center;
+    font-size: 4rem;
+    height: 40%;
+    
+}
+
+header h2{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.contenedor-titulo{
+    position: relative;
+    animation-name: titulos;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+}
+@keyframes titulos{
+    0%{
+        right: 0px;
+        left: 0px
+    }
+    25%{
+        right: 10px;
+        left: 10px;
+    }
+    50%{
+        right: 50px;
+        left: 50px;
+    }
+    75%{
+        right: 100%;
+        left: 100px;
+    }
+    100%{
+        right: 0px;
+        left: 0px;
+    }
+}
+
+
+
+
+
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav{
+    background-color: black;
+    width: 100%;
+}
+
+a{
+    font-size: 0.8rem;
+    color:white;
+    padding: 2px;
+}
+.contenedor-boton{
+    padding: 10px;
+}
+
+#boton{
+    border-radius: 30%;
+    background-color:black;
+    
+}
+
+.div{
+    display:flex;
+    justify-content:space-between;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     order: -1;
+     padding: 10px;
+     width: 100px;
+     transition-duration: 2s;
+     
+     
+}
+
+
+.logo span{
+    border:solid 4px black;
+    background-color: black;
+    color:white;
+    
+}
+
+.logo:hover{
+    transform:scale(2);
+    
+}
+
+ul {
+    list-style-type:none;
+    
+    
+}
+
+a{
+    font-style: none;
+    text-decoration: none;
+    color:white;
+    border-radius: 30%;
+    transition: 500ms;
+}
+a:hover{
+    background-color: white;
+    color:black;
+}
+
+.logo{
+    font-size: 3rem;
+    
+}
+
+
+/* ----------------Main----------------- */
+
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.seguridad h2{
+    font-size: 1.5rem;
+    padding: 15px;
+    font-size: 1.3rem;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.seguridad article h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 1.3rem;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.confort h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 1.3rem;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+aside h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.profesionalismo h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 1.3rem;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.img-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.img-texto img{
+    
+    border-radius: 50%;
+    border:solid black;
+    box-shadow: 20px 20px 20px;
+    transition-duration: 2s;
+    
+    
+}
+.img-texto img:hover{
+transform:skew(45deg);
+}
+
+.img{
+    padding: 10px;
+}
+.texto {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.507);
+    border-radius: 15%;
+    width:80%;
+    
+}
+.aside{
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* ----------------------------Main Documentacion------------------------ */
+
+.doc-afiliado{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.doc-afiliado article{
+    padding: 15px;
+    width: 75%;
+    border-radius: 20%;
+    background-color: rgba(255, 255, 255, 0.582);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-timing-function: linear;
+}
+.doc-afiliado article:hover{
+    transform: translate(-50px);
+    transition-duration: 1000ms;
+}
+.doc-afiliado article h2{
+    font-size: 1.3rem;
+    font-style: oblique;
+}
+.doc-transporte{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.doc-transporte article{
+    padding: 15px;
+    width: 75%;
+    border-radius: 20%;
+    background-color: rgba(255, 255, 255, 0.582);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-timing-function: linear;
+}
+
+.doc-transporte article h2{
+    font-size: 1.3rem;
+    font-style: oblique;
+}
+.doc-transporte article:hover{
+    transform: translate(-50px);
+    transition-duration: 1000ms;
+}
+
+.doc-medica article{
+    padding: 15px;
+    width: 75%;
+    border-radius: 20%;
+    background-color: rgba(255, 255, 255, 0.582);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-timing-function: linear;
+}
+.doc-medica article:hover{
+    transform: translate(50px);
+    transition-duration: 1000ms;
+}
+.doc-medica article h2{
+    font-size: 1.3rem;
+    font-style: oblique;
+}
+.doc-medica{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.doc-a-presentar{
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.582);
+    border-radius: 8%;
+    width: 300px;
+    transition-timing-function: linear;
+}
+
+.doc-a-presentar:hover{
+    transform: translate(50px);
+    transition-duration: 1000ms;
+}
+ 
+
+
+
+/* ----------------footer-------------- */
+
+footer{
+    background-color: rgba(0, 128, 0, 0.699);
+    text-align: center;
+}
+.redes-sociales{
+    background-color: black;
+    color:white
+}
+
+
+.contenedor-redes i{
+    font-size: 2.5rem;
+    color:black;
+    
+}
+
+.contenedor-redes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* --------------------------------Media---------------------------------- */
+
+
+@media(min-width:420px){
+body{
+    border: solid 2px blueviolet;
+}
+.div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* -------------------documentacion---------------------------- */
+
+.doc-a-presentar{
+    width: 300px;
+}
+  
+}
+
+@media(min-width: 768px){
+    body{
+        border: solid 2px rgb(0, 128, 0);
+    }
+    .div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .aside h3{
+        text-align: center;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 30vh ;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "seguridad aside""confort aside""prof aside";
+    }
+
+    
+
+    .seguridad{
+        grid-area: seguridad;
+    }
+
+    
+    .confort{
+        grid-area: confort;
+    }
+    .profesionalismo{
+        grid-area:prof;
+    }
+    .aside{
+        grid-area: aside;
+    }
+
+    .footer{
+        grid-area:footer;
+    }
+    
+/* -------------------------documentacion main--------------------- */
+     
+
+    .main-documentacion{
+        display:grid;
+        grid-template-columns:  60% 40%;
+        grid-template-rows: repeat(4, 50vh) ;
+        grid-template-areas:
+         ". docTrans"
+         "docMed ."
+         ". docAfi"
+         "docAPres .";
+    }
+    .doc-afiliado{
+        grid-area: docAfi;
+        
+    }
+    
+    .doc-transporte{
+        grid-area:docTrans;
+    }
+    .doc-medica{
+        grid-area: docMed;
+    }
+    .doc-a-presentar{
+        grid-area: docAPres;
+    }
+    .doc-a-presentar{
+        transform: translate(50px);
+    }
+
+
+
+
+
+
+
+    .doc-a-presentar{
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.582);
+        border-radius: 8%;
+        width: 460px;
+    }
+    .doc-a-presentar{
+        font-size: 1.3rem;
+        font-style: oblique;
+    }
+    .doc-afiliado article:hover{
+        transform: translate(-300px);
+        transition-duration: 1000ms;
+    }
+    .doc-transporte article:hover{
+        transform: translate(-300px);
+        transition-duration: 1000ms;
+    }
+    .doc-a-presentar:hover{
+        transform: translate(300px);
+        transition-duration: 1000ms;
+    }
+    .doc-medica article:hover{
+        transform: translate(300px);
+        transition-duration: 1000ms;
+    
+    }
+    
+
+}
